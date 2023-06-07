@@ -1,0 +1,313 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,4357" sap2010:WorkflowViewState.IdRef="test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities.TextModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Postal Codes" sap:VirtualizedContainerService.HintSize="1108,4292" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="prepostcode" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1046,4181" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1012,4094" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="950,3983" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Input.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="916,3714" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Arkusz1&quot;).Cell(&quot;F1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="854,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Kod pocztowy&quot;]" />
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome" sap:VirtualizedContainerService.HintSize="854,3404" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="98959feb-bcf3-46bd-ad3b-977118482be4" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="820,3187" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="758,3072" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Arkusz1&quot;)]" SaveAfterEachRow="True">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="Row" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="724,2890" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.google.com/maps/" Version="V3" />
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Wyszukaj w'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="662,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="98959feb-bcf3-46bd-ad3b-977118482be4" Text="[Row.ByField(&quot;Województwo&quot;).ToString + &quot; &quot; + Row.ByField(&quot;Miejscowość&quot;).ToString + &quot; &quot; + Row.ByField(&quot;Ulica&quot;).toString + &quot; &quot; + Row.ByField(&quot;Numer budynku&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/@51.2282488,22.504825,14z" CvTextArgument="Wyszukaj W Mapach Google" CvType="Text" DesignTimeRectangle="80, 100, 216, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT searchboxinput'" FullSelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' type='' class='tactile-searchbox-input' aaname='' /&gt;" Guid="fe52dfbe-1236-4324-b636-18cef780d689" ImageBase64="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" InformativeScreenshot="75dd94eae0f27131120befec0b10faba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mapy Google' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvElementArea="14, 89, 347, 46" CvTextArea="78, 103, 190, 18" CvTextArgument="Wyszukaj W Mapach Google" CvType="InputBox" DesignTimeRectangle="16, 88, 392, 48" FriendlyName="'Wyszukaj w'" FullSelectorArgument="&lt;webctrl id='searchbox' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchbox' tag='DIV' type='' class='nhb85d xoLGzf Hk4XGb FOKsab searchbox-empty W3Tm2c A6Eb0 sbox-focus ' aaname='     ' check:text='Wyszukaj w Mapach Google    Szukaj       Trasa' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[prepostcode]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="1" DisplayName="Get Text " sap:VirtualizedContainerService.HintSize="662,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="98959feb-bcf3-46bd-ad3b-977118482be4" ScrapingMethod="TextAttribute" ScrapingOptions="None" TextString="[prepostcode]" Timeout="0" Version="V3">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/place/Goszczanowo+3,+66-535+Goszczanowo/@52.7275424,15.6171086,17z/data=!3m1!4b1!4m6!3m5!1s0x4706c25daf1e5847:0xbb22c5d151a8d577!8m2!3d52.7275424!4d15.6171086!16s%2Fg%2F11sqf55pcz" CvType="AnyWordGroup" DesignTimeRectangle="80, 529, 240, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Goszczanowo 3,'" FullSelectorArgument="&lt;webctrl class='DkEaL' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='DkEaL' tag='SPAN' type='' /&gt;" Guid="a81e57b2-746a-483c-8d57-8fbea50e5204" ImageBase64="" InformativeScreenshot="c8be2b4bfaee2fbf8d4ce97f6246ce0f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Goszczanowo 3 – Mapy Google' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvType="Icon" DesignTimeRectangle="32, 526, 24, 24" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aria-role='presentation' tag='IMG' isleaf='1' src='//www.gstatic.com/images/icons/material/system_gm/1x/place_gm_blue_24dp.png' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='IMG' isleaf='1' src='//www.gstatic.com/images/icons/material/system_gm/1x/place_gm_blue_24dp.png' type='' class='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVEhL7ZXLa1NBFMbnn3FV1JWbFnxs1Kr1URGsjyK6sG7cCCIi1IVLq0haBUHBx1JwI1ZtQdSFqODCSkXU3JvGxrZJW0yiaVrr5/lOb5rS6LkTLa76g4G5Z77Jl5lzZsbhP7NsuOR4G04Wf+JCbx5HrubQdDajjX3GJmTMFy/Dx4MluI40XHMAtzVEw8lhbexrTMb635YitU2s4b3X3+FWJuE2Bzh+YxzPP0xFI9A+Yxyjhto4TMNcfhbuYApuW4Ar/YUoWgvHqKE2K3MsTEPmx7UEOHotF0WAz+M/cOtZET19Be1X6BANtV3381Hk95iG27tG4Xam8OLj3DbSwK2TleyXVbPtTs2bvvw0pdqW86P6/SdMw1WnpDCOpVEozVXhzadFNZovmraUxgg11K6WORamYWNnRiuwYtj9SLa43TAULedYmIZt3VnJS4g3Q2X9trZ0IF2G2xHqHAvT8CKLZm0SiYfVQqABV8XVVsyIrl60nGNhGr7/Mi2FEGLF6Qymq79dw4yMUeN2hTrHwjQkuq1yo9x99S2K1MJjwiOxN2FvJ4k1fPJOrjW5SRo6R1CeiYIL4B3L6uSfojaOWEOyr0dWuSXApQe1+Tlxe0L/UFyxVPAyDLNSnZIfXtSDw9Uc9Q3I6jdJ1baGqvHBy5DofbkxwJpzI1pAfJL0BZHcXTbu2cV4G87K2d+TGINbn8SZO5M4fF1eiQ1JtEqMY754G5Kxr/J6HBqCOyCHnk36jNVDXYZEq7ZJ3kdpPlW5mLoNCXNWT94W8leG/8Ky4RID/AKWEnz5M12XggAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <If Condition="[string.IsNullOrEmpty(prepostcode) = false]" sap:VirtualizedContainerService.HintSize="662,2076" sap2010:WorkflowViewState.IdRef="If_2">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="628,1647" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If Condition="[prepostcode.Contains(&quot;-&quot;)]" sap:VirtualizedContainerService.HintSize="586,1559" sap2010:WorkflowViewState.IdRef="If_1">
+                                            <If.Then>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="552,1130" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="x:String" Name="postcode" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <If Condition="[prepostcode.Substring(0,1).IsNumeric() = true]" sap:VirtualizedContainerService.HintSize="510,1042" sap2010:WorkflowViewState.IdRef="If_4">
+                                                  <If.Then>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="476,369" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[postcode]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[prepostcode.Substring(0,6)]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <ueab:WriteCellX Cell="[Row.ByField(&quot;Kod pocztowy&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[postcode]" />
+                                                    </Sequence>
+                                                  </If.Then>
+                                                  <If.Else>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="476,491" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[prepostcode]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[prepostcode.Split(",")(1)]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[postcode]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[prepostcode.Substring(1,7)]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <ueab:WriteCellX Cell="[Row.ByField(&quot;Kod pocztowy&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[postcode]" />
+                                                    </Sequence>
+                                                  </If.Else>
+                                                </If>
+                                              </Sequence>
+                                            </If.Then>
+                                            <If.Else>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="476,247" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:WriteCellX Cell="[Row.ByField(&quot;Kod pocztowy&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;BŁĘDNY ADRES&quot;]" />
+                                              </Sequence>
+                                            </If.Else>
+                                          </If>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="476,247" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[Row.ByField(&quot;Kod pocztowy&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;BŁĘDNY ADRES&quot;]" />
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="27, 3, 945, 1012" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f6d7feca2f3c7b116144ad9fd1cfccc7.jpg" Selector="&lt;html app='chrome.exe' url='https://www.google.com/maps/' /&gt;" Title="Kod pocztowy Goszczanowo •• Wyszukiwarka, kody pocztowe, ulice, mapa" Url="https://www.google.com/maps/" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
